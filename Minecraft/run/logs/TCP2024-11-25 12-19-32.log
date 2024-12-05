@@ -1,0 +1,10 @@
+2024-Nov-25 06:52:23.927000 M SEVERE     <-obs(kubernetes.docker.internal:10784) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Nov-25 06:52:23.976000 M SEVERE     <-obs(kubernetes.docker.internal:10784) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:52:24.260000 M SEVERE     <-obs(kubernetes.docker.internal:10784) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:52:24.820000 M SEVERE     <-obs(kubernetes.docker.internal:10784) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:52:24.210000 M SEVERE <-mcp(kubernetes.docker.internal:10710) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Nov-25 06:53:54.368000 M SEVERE     <-obs(kubernetes.docker.internal:10855) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Nov-25 06:53:54.422000 M SEVERE     <-obs(kubernetes.docker.internal:10855) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:53:54.476000 M SEVERE     <-obs(kubernetes.docker.internal:10855) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:53:54.533000 M SEVERE     <-obs(kubernetes.docker.internal:10855) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Nov-25 06:53:54.647000 M SEVERE <-mcp(kubernetes.docker.internal:10737) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host

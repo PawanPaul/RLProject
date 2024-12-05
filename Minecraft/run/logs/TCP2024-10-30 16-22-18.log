@@ -1,0 +1,69 @@
+2024-Oct-30 10:54:56.354000 M SEVERE <-mcp(kubernetes.docker.internal:10916) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 10:54:58.381000 M SEVERE <-mcp(kubernetes.docker.internal:10916) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
+2024-Oct-30 10:55:01.229000 M SEVERE     <-obs(kubernetes.docker.internal:10413) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 10:55:01.299000 M SEVERE     <-obs(kubernetes.docker.internal:10413) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:55:01.352000 M SEVERE     <-obs(kubernetes.docker.internal:10413) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:55:01.392000 M SEVERE     <-obs(kubernetes.docker.internal:10413) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:55:01.547000 M SEVERE <-mcp(kubernetes.docker.internal:10795) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 10:56:45.400000 M SEVERE     <-obs(kubernetes.docker.internal:10963) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 10:56:45.429000 M SEVERE     <-obs(kubernetes.docker.internal:10963) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:56:45.480000 M SEVERE     <-obs(kubernetes.docker.internal:10963) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:56:45.533000 M SEVERE     <-obs(kubernetes.docker.internal:10963) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 10:56:45.612000 M SEVERE <-mcp(kubernetes.docker.internal:10815) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:10:34.237000 M SEVERE     <-obs(kubernetes.docker.internal:10632) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:10:34.305000 M SEVERE     <-obs(kubernetes.docker.internal:10632) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:10:34.373000 M SEVERE     <-obs(kubernetes.docker.internal:10632) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:10:34.373000 M SEVERE     <-obs(kubernetes.docker.internal:10632) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:10:34.508000 M SEVERE <-mcp(kubernetes.docker.internal:10839) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:12:40.675000 M SEVERE     <-obs(kubernetes.docker.internal:10226) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:12:40.733000 M SEVERE     <-obs(kubernetes.docker.internal:10226) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:12:40.762000 M SEVERE     <-obs(kubernetes.docker.internal:10226) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:12:40.820000 M SEVERE     <-obs(kubernetes.docker.internal:10226) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:12:40.907000 M SEVERE <-mcp(kubernetes.docker.internal:10648) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:14:10.174000 M SEVERE     <-obs(kubernetes.docker.internal:10346) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:14:10.219000 M SEVERE     <-obs(kubernetes.docker.internal:10346) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:14:10.262000 M SEVERE     <-obs(kubernetes.docker.internal:10346) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:14:10.352000 M SEVERE     <-obs(kubernetes.docker.internal:10346) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:14:10.443000 M SEVERE <-mcp(kubernetes.docker.internal:10392) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:25:35.164000 M SEVERE     <-obs(kubernetes.docker.internal:10483) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:25:35.221000 M SEVERE     <-obs(kubernetes.docker.internal:10483) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:25:35.247000 M SEVERE     <-obs(kubernetes.docker.internal:10483) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:25:35.300000 M SEVERE     <-obs(kubernetes.docker.internal:10483) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:25:35.441000 M SEVERE <-mcp(kubernetes.docker.internal:10750) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:27:23.306000 M SEVERE <-mcp(kubernetes.docker.internal:10247) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:27:25.354000 M SEVERE <-mcp(kubernetes.docker.internal:10247) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
+2024-Oct-30 11:27:25.355000 M SEVERE <-mcp(kubernetes.docker.internal:10247) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:27:27.386000 M SEVERE <-mcp(kubernetes.docker.internal:10247) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
+2024-Oct-30 11:27:27.425000 M SEVERE <-mcp(kubernetes.docker.internal:10247) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:33:18.327000 M SEVERE     <-obs(kubernetes.docker.internal:10988) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:33:18.383000 M SEVERE     <-obs(kubernetes.docker.internal:10988) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:33:18.437000 M SEVERE     <-obs(kubernetes.docker.internal:10988) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:33:18.490000 M SEVERE     <-obs(kubernetes.docker.internal:10988) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:33:18.631000 M SEVERE <-mcp(kubernetes.docker.internal:10528) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:34:47.205000 M SEVERE     <-obs(kubernetes.docker.internal:10344) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-30 11:34:47.243000 M SEVERE     <-obs(kubernetes.docker.internal:10344) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:34:47.285000 M SEVERE     <-obs(kubernetes.docker.internal:10344) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:34:47.324000 M SEVERE     <-obs(kubernetes.docker.internal:10344) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-30 11:34:47.525000 M SEVERE <-mcp(kubernetes.docker.internal:10415) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 03:43:50.981000 M SEVERE     <-obs(kubernetes.docker.internal:10261) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 03:43:51.440000 M SEVERE     <-obs(kubernetes.docker.internal:10261) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 03:43:51.450000 M SEVERE     <-obs(kubernetes.docker.internal:10261) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 03:43:51.109000 M SEVERE     <-obs(kubernetes.docker.internal:10261) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 03:43:51.233000 M SEVERE <-mcp(kubernetes.docker.internal:10723) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 04:26:11.952000 M SEVERE     <-obs(kubernetes.docker.internal:10528) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 04:26:11.988000 M SEVERE     <-obs(kubernetes.docker.internal:10528) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 04:26:12.540000 M SEVERE     <-obs(kubernetes.docker.internal:10528) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 04:26:12.880000 M SEVERE     <-obs(kubernetes.docker.internal:10528) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 04:26:12.198000 M SEVERE <-mcp(kubernetes.docker.internal:10297) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 04:31:13.762000 M SEVERE     <-obs(kubernetes.docker.internal:10272) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 04:31:13.822000 M SEVERE     <-obs(kubernetes.docker.internal:10272) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 04:31:13.870000 M SEVERE <-mcp(kubernetes.docker.internal:10891) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Oct-31 04:31:15.923000 M SEVERE <-mcp(kubernetes.docker.internal:10891) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
+2024-Oct-31 04:31:15.923000 M SEVERE <-mcp(kubernetes.docker.internal:10891) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException
+2024-Oct-31 04:31:17.967000 M SEVERE <-mcp(kubernetes.docker.internal:10891) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
+2024-Oct-31 04:31:17.995000 M SEVERE <-mcp(kubernetes.docker.internal:10891) Failed to send TCP bytes: java.util.concurrent.ExecutionException: java.nio.channels.ClosedChannelException

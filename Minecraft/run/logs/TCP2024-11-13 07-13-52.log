@@ -1,0 +1,3 @@
+2024-Nov-13 01:44:29.494000 M SEVERE <-mcp(kubernetes.docker.internal:10017) Failed to send TCP bytes -- retrying : java.util.concurrent.ExecutionException: java.io.IOException: An existing connection was forcibly closed by the remote host
+2024-Nov-13 01:44:31.537000 M SEVERE <-mcp(kubernetes.docker.internal:10017) Failed to reconnect: java.util.concurrent.ExecutionException: java.io.IOException: The remote computer refused the network connection.
+
