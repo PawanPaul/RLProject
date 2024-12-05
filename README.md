@@ -8,16 +8,16 @@ Have Pycharm installed on your system
 1) Extract the zipped folders labelled bin, bin2 and bin3 in ffmpeg
 2) Put the .exe files from bin2 and bin3 into bin
 3) Add bin path to environment variables
-3AA) ![Step 1](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep1.png)
-3A) Copy path to bin
-3BA) ![Step 2](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep2.png)
-3B) Search for environment variables in system search bar
-3CA) ![Step 3](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep3.png)
-3C) Click on the 'Environment Variables' option
-3DA) ![Step 4](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep4.png)
-3D) Double click on 'Path'
-3EA) ![Step 5](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep5.png)
-3E) Paste path into the list, or click 'New' and insert from there
+3A) ![Step 1](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep1.png)
+3B) Copy path to bin
+3C) ![Step 2](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep2.png)
+3D) Search for environment variables in system search bar
+3E) ![Step 3](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep3.png)
+3F) Click on the 'Environment Variables' option
+3G) ![Step 4](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep4.png)
+3H) Double click on 'Path'
+3I) ![Step 5](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep5.png)
+3J) Paste path into the list, or click 'New' and insert from there
 4) Open up powershell in admin mode
 5) Run cmd: Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 6) cd into scripts folder (navigate to scripts folder)
