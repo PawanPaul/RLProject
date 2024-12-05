@@ -8,21 +8,21 @@ Have Pycharm installed on your system
 1) Extract the zipped folders labelled bin, bin2 and bin3 in ffmpeg
 2) Put the .exe files from bin2 and bin3 into bin
 3) Add bin path to environment variables
-3A) ![Step 1](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep1.png)
-3B) Copy path to bin
-3C) ![Step 2](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep2.png)
-3D) Search for environment variables in system search bar
-3E) ![Step 3](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep3.png)
-3F) Click on the 'Environment Variables' option
-3G) ![Step 4](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep4.png)
-3H) Double click on 'Path'
-3I) ![Step 5](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep5.png)
-3J) Paste path into the list, or click 'New' and insert from there
-4) Open up powershell in admin mode
-5) Run cmd: Set-ExecutionPolicy -Scope CurrentUser Unrestricted
-6) cd into scripts folder (navigate to scripts folder)
-7) Run cmd: .\malmo_install.ps1
-8) To run Minecraft, go to 'Minecraft' folder and run launchClient.bat (if you are on windows). It will start loading. (N. This version of Minecraft operates on the MinecraftForge plugin and thus counts as a game. If your Wi-Fi prevents access to games, it will cause launch to fail. Kindly switch to your mobile network, or a non-restricted Wi-Fi if that is the case)
+4) ![Step 1](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep1.png)
+5) Copy path to bin
+6) ![Step 2](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep2.png)
+7) Search for environment variables in system search bar
+8) ![Step 3](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep3.png)
+9) Click on the 'Environment Variables' option
+10) ![Step 4](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep4.png)
+11) Double click on 'Path'
+12) ![Step 5](https://github.com/PawanPaul/RLProject/blob/main/Pictures/FFMPEGtoPathStep5.png)
+13) Paste path into the list, or click 'New' and insert from there
+14) Open up powershell in admin mode
+15) Run cmd: Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+16) cd into scripts folder (navigate to scripts folder)
+17) Run cmd: .\malmo_install.ps1
+18) To run Minecraft, go to 'Minecraft' folder and run launchClient.bat (if you are on windows). It will start loading. (N. This version of Minecraft operates on the MinecraftForge plugin and thus counts as a game. If your Wi-Fi prevents access to games, it will cause launch to fail. Kindly switch to your mobile network, or a non-restricted Wi-Fi if that is the case)
 
 # Setting up the coding/testing environment
 1) Open Pycharm
