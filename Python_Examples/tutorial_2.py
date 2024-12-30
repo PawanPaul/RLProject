@@ -56,6 +56,7 @@ selfslice = {}
 world_map = {}
 chosenState = ""
 chosenAction = ""
+chosen = 1
 
 inventory = {}
 tools_list = ["wooden_pickaxe","stone_pickaxe","iron_pickaxe","diamond_pickaxe","shears"]
@@ -283,6 +284,10 @@ def setTool(t):
 def setTarget(t):
     global target
     target = t
+
+def setChosen(c):
+    global chosen
+    chosen = c
 
 def setCraftable(value):
     global  craftable
@@ -642,16 +647,15 @@ def MoveEval(obs):
         xmod,zmod=DirMap(i,1)
         world_map[str(x + xmod) + ":" + str(y) + ":" + str(z + zmod)] = slice
         state = sslice["state"] + slice["state"]
-        if state in StateList.keys():
-            for action in StateList[state]["actions"].keys():
-                moveval = max(moveval,StateList[state]["actions"][action]["value"] + slice["stateval"] + numpy.float64(1)/StateList[state]["actions"][action]["familiarity"])
-        else:
-            moveval = 10 + slice["stateval"]
-        #statevls.append(slice["stateval"])
-    #avgval=avgval/4
-    #print("State vals: ")
-    #print(statevls)
-    #print("average value: "+str(avgval))
+        if state not in StateList.keys():
+            move_state_construct(sslice,slice)
+        for action in StateList[state]["actions"].keys():
+            rating = StateList[state]["actions"][action]["value"] + slice["stateval"] + numpy.float64(1)/StateList[state]["actions"][action]["familiarity"]
+            if rating>moveval:
+                moveval = rating
+                setChosenState(state)
+                setChosenAction(action)
+                setChosen(i)
     return moveval
 
 #Returns the default action taken by the MoveSpecialist
@@ -666,47 +670,48 @@ def MoveHandler(obs):
     global SliceStateList
     global StateList
     setFlag("move")
-    seval = getStatesToEval()
-    sfslice = getSelfslice()
-    localStateList=[]
-    for i in range(0,4):
-        localStateList.append(move_state_construct(sfslice,seval[i]))
-    chosen = 1
-    chosenState = localStateList[0]
-    chosenAction,chosenActionValue,isOption,chosenActionName=defaultAction()
-    chosenList = []
-    chosenList.append([chosen, chosenState, chosenAction, isOption, chosenActionName])
-    i=0
-    for local in localStateList:
-        i=i+1
-        pac,pacval,piO,pacnm=maxAction(local["actions"])
-        if pacval==chosenActionValue:
-            chosenList.append([i,local["state"],pac,piO,pacnm])
-        elif pacval>chosenActionValue:
-            chosenList.clear()
-            chosenList.append([i, local["state"], pac, piO,pacnm])
+    #seval = getStatesToEval()
+    #sfslice = getSelfslice()
+    #localStateList=[]
+    #for i in range(0,4):
+    #    localStateList.append(move_state_construct(sfslice,seval[i]))
+    #chosen = 1
+    #chosenState = localStateList[0]
+    #chosenAction,chosenActionValue,isOption,chosenActionName=defaultAction()
+    #chosenList = []
+    #chosenList.append([chosen, chosenState, chosenAction, isOption, chosenActionName])
+    #i=0
+    #for local in localStateList:
+    #    i=i+1
+    #    pac,pacval,piO,pacnm=maxAction(local["actions"])
+    #    if pacval==chosenActionValue:
+    #        chosenList.append([i,local["state"],pac,piO,pacnm])
+    #    elif pacval>chosenActionValue:
+    #        chosenList.clear()
+    #        chosenList.append([i, local["state"], pac, piO,pacnm])
             #chosen=i
             #chosenState=local["state"]
             #chosenAction=pac
-            chosenActionValue=pacval-ChosenBoredom[str(chosen)]
+    #        chosenActionValue=pacval-ChosenBoredom[str(chosen)]
             #isOption=piO
-    selected = numpy.random.randint(-1,len(chosenList)-1) + 1
-    chosen=chosenList[selected][0]
-    chosenState=chosenList[selected][1]
-    chosenAction=chosenList[selected][2]
-    isOption=chosenList[selected][3]
-    chosenActionName=chosenList[selected][4]
-    if(isOption):
-        ExecuteAction(chosenAction.split(":"))
-    else:
-        ConstructAction(chosenAction,chosen)
+    #selected = numpy.random.randint(-1,len(chosenList)-1) + 1
+    #chosen=chosenList[selected][0]
+    #chosenState=chosenList[selected][1]
+    #chosenAction=chosenList[selected][2]
+    #isOption=chosenList[selected][3]
+    #chosenActionName=chosenList[selected][4]
+    #if(isOption):
+    #    ExecuteAction(chosenAction.split(":"))
+    #else:
+    #    ConstructAction(chosenAction,chosen)
         #print("Construct: ")
         #print(construct)
         #ExecuteAction(construct)
     #LoopDetector(MoveMem)
+    ConstructAction(StateList[chosenState]["actions"][chosenAction]["action"],chosen)
     setPrevObs(obs)
-    setChosenState(chosenState)
-    setChosenAction(chosenActionName)
+    #setChosenState(chosenState)
+    #setChosenAction(chosenActionName)
     #ModifyBoredom(chosenAction)
     #ModifyChosenBoredom(str(chosen))
     return 0
@@ -1031,9 +1036,9 @@ def MineEval(obs):
                 setMiningTarget(value+1)
                 chosenmineable = mineable
                 loc = value + 1
-            print("chosen item and location")
-            print(chosenmineable)
-            print(loc)
+            #print("chosen item and location")
+            #print(chosenmineable)
+            #print(loc)
     return benchmark
 
 #Maps chosen grid segment to equivalent action
@@ -1467,12 +1472,12 @@ def MoveRequestEval(obs, dst):
             move_state_construct(sslice,slice)
         for action in StateList[state]["actions"].keys():
             xmod, zmod = DirMap(i, StateList[state]["actions"][action]["changeXZ"])
-            h = StateList[state]["actions"][action]["effort"]/(StateList[state]["actions"][action]["value"] + 1)
+            #h = StateList[state]["actions"][action]["effort"]/(StateList[state]["actions"][action]["value"] + 1)
             g = Distance(dst[0],dst[1],dst[2],x+xmod,y,z+zmod)
-            if (h+g)<moveval:
+            if g<moveval:
                 chosen = i
                 chosen_action = StateList[state]["actions"][action]["action"]
-                moveval = h+g
+                moveval = g
                 setChosenState(state)
                 setChosenAction(action)
     if chosen_action!="":
